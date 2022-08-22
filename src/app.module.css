@@ -1,0 +1,14 @@
+* {
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1200px;
+  min-width: 800px;
+  background-color: aquamarine;
+  margin: auto;
+}
