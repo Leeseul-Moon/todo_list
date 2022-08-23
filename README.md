@@ -15,7 +15,7 @@
 
 <br>
 
-## Goal
+## Goal🔥
 
 ✅ Todo CRUD 구현. (업데이트는 완료 여부)
 <br>✅ Todo 클릭시 상세 페이지 조회 (Router v6)
