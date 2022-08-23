@@ -1,0 +1,27 @@
+.button {
+  flex: 1 1 30%;
+  height: 2em;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.8em;
+  margin: 0.1em;
+  background-color: lightblue;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.delete {
+  background-color: lightcoral;
+}
+
+.add {
+  border-radius: 1em;
+  border-width: 0.1em;
+  background-color: linen;
+  color: black;
+}
+.add:hover {
+  background-color: white;
+}

@@ -1,14 +1,18 @@
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import styles from "./app.module.css";
-import Footer from "./components/footer/footer";
-import Header from "./components/header/header";
-import TodoList from "./components/todo_list/todo_list";
+import Detail from "./components/detail/detail";
+import Layout from "./components/layout/layout";
 
 function App() {
   return (
     <div className={styles.app}>
-      <Header />
-      <TodoList />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" exact element={<Layout />} />
+          <Route path="/todolist" element={<Layout />} />
+          <Route path="/detail/:id" element={<Detail />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

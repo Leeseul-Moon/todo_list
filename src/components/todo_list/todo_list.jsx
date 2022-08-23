@@ -8,9 +8,24 @@ const TodoList = (props) => {
   console.log("todos > ", todos);
 
   return (
-    <section>
-      <ul></ul>
-    </section>
+    <div className={styles.container}>
+      <section className={styles.working}>
+        <h2 className={styles.title}>Working 👩🏻‍💻</h2>
+        <div className={styles.todos}>
+          {todos.map((todo) =>
+            todo.isDone === false ? <Todo todo={todo} key={todo.id} /> : null
+          )}
+        </div>
+      </section>
+      <section className={styles.done}>
+        <h2 className={styles.title}>Done 🎉</h2>
+        <div className={styles.todos}>
+          {todos.map((todo) =>
+            todo.isDone === true ? <Todo todo={todo} key={todo.id} /> : null
+          )}
+        </div>
+      </section>
+    </div>
   );
 };
 

@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.title {
+  /* color: black; */
+}
+
+.working {
+  width: 50%;
+  /* display: flex; */
+  background-color: bisque;
+  /* background-color: rgb(187, 211, 243); */
+  /* background-color: gainsboro; */
+  border-radius: 0 0 0 1em;
+  padding-top: 2em;
+  /* margin: 1em; */
+}
+
+.done {
+  width: 50%;
+  background-color: pink;
+  /* background-color: ; */
+  border-radius: 0 0 1em 0;
+  padding-top: 2em;
+  /* margin: 1em; */
+}
+
+.todos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

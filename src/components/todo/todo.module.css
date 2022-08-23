@@ -1,0 +1,34 @@
+.container {
+  text-align: left;
+  background-color: lavenderblush;
+  border-radius: 1em;
+  margin: 1em;
+  cursor: pointer;
+  box-shadow: 6px 6px 8px 0px #3333;
+
+  /* 글 길어지면... 아직 적용 안됨. 수정 필요*/
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title {
+  font-size: 1.2em;
+  padding-left: 0.5em;
+  padding-top: 0.8em;
+}
+
+.message {
+  font-size: 0.8em;
+  padding-left: 0.75em;
+  margin-top: 0.2em;
+  margin-bottom: 0.6em;
+}
+
+.buttons {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  margin-bottom: 0.4em;
+}
