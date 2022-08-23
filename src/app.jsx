@@ -9,7 +9,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<Layout />} />
-          <Route path="/todolist" element={<Layout />} />
           <Route path="/detail/:id" element={<Detail />} />
         </Routes>
       </BrowserRouter>

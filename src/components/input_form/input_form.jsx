@@ -13,6 +13,10 @@ const InputForm = (props) => {
   const dispatch = useDispatch();
 
   const onSubmitHandler = (e) => {
+    if (titleRef.current.value === "" || messageRef.current.value === "") {
+      alert("제목 or 내용이 없습니다 😅");
+      return;
+    }
     e.preventDefault();
     dispatch(
       addTodo({
