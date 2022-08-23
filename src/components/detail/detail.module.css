@@ -1,3 +1,44 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .detail {
-  height: 500px;
+  width: 30%;
+  height: 30%;
+  padding: 1em;
+  background-color: lavender;
+  box-shadow: 6px 6px 8px 0px #3333;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.idLink {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.link {
+  border: 1px solid gray;
+  background-color: lemonchiffon;
+  padding: 0.2em;
+  border-radius: 1em;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: lightsalmon;
+}
+
+.title,
+.message {
+  text-align: left;
+}
+
+.title {
+  font-size: 1.2em;
+  margin-bottom: 0.2em;
 }

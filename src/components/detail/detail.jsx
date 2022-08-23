@@ -7,13 +7,16 @@ const Detail = (props) => {
   const { id, title, message, isDone } = location.state.todoDetail;
 
   return (
-    <div className={styles.detail}>
-      <ul>
-        <li>{id}</li>
-        <li>{title}</li>
-        <li>{message}</li>
-        <Link to={"/"}>이전으로</Link>
-        ㅎㅎㅎ
+    <div className={styles.container}>
+      <ul className={styles.detail}>
+        <div className={styles.idLink}>
+          <li className={styles.id}>id : {id}</li>
+          <Link className={styles.link} to={"/"}>
+            이전으로
+          </Link>
+        </div>
+        <li className={styles.title}>{title}</li>
+        <li className={styles.message}>{message}</li>
       </ul>
     </div>
   );
