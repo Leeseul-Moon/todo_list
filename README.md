@@ -1,6 +1,6 @@
 ## Todo List
 
-공부한 내용을 덧붙여 완성 시켜가는 To-Do List 입니다.
+공부한 내용을 덧붙여 완성 시켜가는 [To-Do List](https://leeseul-moon.github.io/todo_list/) 입니다.
 
 <br>
 
