@@ -7,7 +7,7 @@ function App() {
   return (
     <div className={styles.app}>
       <BrowserRouter>
-        <Routes>
+        <Routes basename={process.env.PUBLIC_URL}>
           <Route path="/" exact element={<Layout />} />
           <Route path="/detail/:id" element={<Detail />} />
         </Routes>
