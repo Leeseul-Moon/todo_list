@@ -2,8 +2,7 @@ import React, { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import Button from "../button/button";
 import { addTodo } from "../../redux/modules/todos";
-//src/redux/modules/todos.js
-///Users/leeseulmoon/programming/study_react/todo_redux_firebase/src/redux/modules/todos.js
+import uuid from "react-uuid";
 import styles from "./input_form.module.css";
 
 const InputForm = (props) => {
@@ -21,7 +20,7 @@ const InputForm = (props) => {
     e.preventDefault();
     dispatch(
       addTodo({
-        id: Math.random(),
+        id: uuid(),
         title: titleRef.current.value,
         message: messageRef.current.value,
         isDone: false,
