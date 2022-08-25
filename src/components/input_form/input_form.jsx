@@ -7,6 +7,7 @@ import { addTodo } from "../../redux/modules/todos";
 import styles from "./input_form.module.css";
 
 const InputForm = (props) => {
+  const formRef = useRef();
   const titleRef = useRef();
   const messageRef = useRef();
 
@@ -26,10 +27,11 @@ const InputForm = (props) => {
         isDone: false,
       })
     );
+    formRef.current.reset();
   };
 
   return (
-    <form className={styles.inputForm} onSubmit={onSubmitHandler}>
+    <form ref={formRef} className={styles.inputForm} onSubmit={onSubmitHandler}>
       <input
         className={styles.input}
         type="text"
