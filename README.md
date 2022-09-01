@@ -1,12 +1,12 @@
 ## Todo List
 
-공부한 내용을 덧붙여 완성 시켜가는 [To-Do List](https://leeseul-moon.github.io/todo_list/) 입니다.
+리액트 기본 개념을 익히며 만든 [To-Do List](https://leeseul-moon.github.io/todo_list/) 입니다.
 
 <br>
 
 ## 프로젝트 정보
 
-작업기간: 22.08.22 ~
+작업기간: 22.08.22 ~ 22.08.24
 <br>사용기술: HTML, CSS, JavaScript, React
 <br>컴포넌트 구조: 재사용할 수 있는 것은 모두 컴포넌트화 하여 코드 중복 최소화
 <br>
@@ -21,7 +21,3 @@
 <br>✅ Todo 클릭시 상세 페이지 조회 (Router v6)
 <br>✅ Redux ducks 패턴으로 상태 관리
 <br>✅ Post CSS 모듈화 활용
-<br>fireStore 로 DB 연동
-<br>불필요한 리렌더링 방지
-<br>Drag&Drop
-<br>예외처리
